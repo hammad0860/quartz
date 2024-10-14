@@ -8,7 +8,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:renderer": "cross-env NODE_ENV=development TS_NODE_TRANSPILE_ONLY=true webpack serve --config ./config/webpack.config.renderer.dev.ts",
     "start:main": "cross-env NODE_ENV=development electron -r ts-node/register/transpile-only ./src/main/main.ts",
-    "build": "electron-builder"
+    "build": "electron-builder",
+    "win": "electron-builder --win",
+    "mac": "electron-builder --mac",
+    "linux": "electron-builder --linux"
+
   },
   "author": "",
   "license": "ISC",
@@ -38,7 +42,7 @@
     "css-minimizer-webpack-plugin": "^3.3.1",
     "depcheck": "^1.4.7",
     "electron": "^27.1.0",
-    "electron-builder": "^24.6.4",
+    "electron-builder": "^24.13.3",
     "electron-devtools-installer": "^3.2.0",
     "eslint": "^8.5.0",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -103,5 +107,29 @@
     "recharts": "^2.1.8",
     "systeminformation": "^4.0.0",
     "vanta": "^0.5.21"
+  },
+  "build": {
+    "appId": "com.Myriade",
+    "productName": "Quartz",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "dist/**/*",
+      "node_modules/**/*",
+      "src/**/*"
+    ],
+    "mac": {
+      "target": "dmg"
+      
+    },
+    "win": {
+      "target": "nsis"
+      
+    },
+    "linux": {
+      "target": "AppImage"
+    
+    }
   }
 }

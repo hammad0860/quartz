@@ -1,16 +1,30 @@
-import { app, BrowserWindow, ipcMain, shell } from "electron";
-import log from "electron-log";
-import { autoUpdater } from "electron-updater";
-import { resolveHtmlPath } from "./util";
+//import { app, BrowserWindow, ipcMain, shell } from "electron";
+const { app, BrowserWindow, ipcMain, shell } = require("electron");
+
+//import log from "electron-log";
+const log = require("electron-log");
+
+
+//import { autoUpdater } from "electron-updater";
+//import { resolveHtmlPath } from "./util";
+const { autoUpdater } = require("electron-updater");
+const { resolveHtmlPath } = require("./util");
+
 const { spawn, exec } = require('child_process');
 const os = require('os');
-import systeminformation from 'systeminformation';
-import axios from 'axios';
-import AdmZip from 'adm-zip';
-import fs from 'fs';
-import path from 'path';
 
-export default class AppUpdater {
+//import systeminformation from 'systeminformation';
+//import axios from 'axios';
+//import AdmZip from 'adm-zip';
+//import fs from 'fs';
+//import path from 'path';
+const systeminformation = require('systeminformation');
+const axios = require('axios');
+const AdmZip = require('adm-zip');
+const fs = require('fs');
+const path = require('path');
+
+class AppUpdater {
   constructor() {
     log.transports.file.level = "info";
     autoUpdater.logger = log;
@@ -18,7 +32,12 @@ export default class AppUpdater {
   }
 }
 
-let mainWindow: BrowserWindow | null = null;
+module.exports = AppUpdater;
+
+
+//let mainWindow: BrowserWindow | null = null;
+let mainWindow = null;
+
 
 if (process.env.NODE_ENV === "production") {
   const sourceMapSupport = require("source-map-support");
@@ -44,7 +63,9 @@ const getExtractPath = () => {
   }
 };
 
-let extractedFolderName: string = "";
+//let extractedFolderName: string = "";
+let extractedFolderName = "";
+
 
 const getDownloadPath = () => {
   const tempPath = app.getPath('temp');
@@ -74,7 +95,7 @@ const getDownloadUrl = () => {
   }
 };
 
-const findExtractedFolderName = (extractPath: string): string => {
+const findExtractedFolderName = (extractPath) => {
   const extractedItems = fs.readdirSync(extractPath);
   return extractedItems.find((item) => {
     return fs.statSync(path.join(extractPath, item)).isDirectory();
@@ -251,7 +272,8 @@ app.whenReady().then(() => {
   });
 });
 
-let appProcess: any;
+//let appProcess: any;
+let appProccess;
 
 ipcMain.on('start-xmrig', (event) => {
   let appPath;
