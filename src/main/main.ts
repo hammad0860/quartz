@@ -8,7 +8,7 @@ const log = require("electron-log");
 //import { autoUpdater } from "electron-updater";
 //import { resolveHtmlPath } from "./util";
 const { autoUpdater } = require("electron-updater");
-const { resolveHtmlPath } = require("./util");
+const { resolveHtmlPath } = require("./util.js");
 
 const { spawn, exec } = require('child_process');
 const os = require('os');
