@@ -2,13 +2,15 @@
   "name": "quartz",
   "version": "1.0.0",
   "description": "Myriade desktop client",
-  "main": "src/main/main.ts",
+  "main": "./src/renderer/app.js",
   "scripts": {
     "dev": "webpack serve --config ./config/webpack.config.base.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:renderer": "cross-env NODE_ENV=development TS_NODE_TRANSPILE_ONLY=true webpack serve --config ./config/webpack.config.renderer.dev.ts",
-    "start:main": "cross-env NODE_ENV=development electron -r ts-node/register/transpile-only ./src/main/main.ts",
-    "build": "electron-builder"
+    "start:main": "cross-env NODE_ENV=development electron -r ts-node/register/transpile-only ./src/main/main.js",
+    "build": "electron-builder",
+    "electron": "electron .",
+    "electron-build": "webpack --config ./config/webpack.config.js && electron ."
   },
   "author": "",
   "license": "ISC",
@@ -70,10 +72,10 @@
     "ts-loader": "^9.2.6",
     "ts-node": "^10.4.0",
     "typescript": "^4.5.4",
-    "webpack": "^5.65.0",
+    "webpack": "^5.95.0",
     "webpack-bundle-analyzer": "^4.5.0",
-    "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^4.7.1",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.15.2",
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
@@ -92,6 +94,7 @@
     "electron-devtools-installer": "^3.2.0",
     "electron-link": "^0.6.0",
     "electron-log": "^4.4.1",
+    "electron-packager": "^17.1.2",
     "electron-updater": "^4.6.1",
     "jwt-decode": "^3.1.2",
     "lodash": "^4.17.21",
@@ -102,6 +105,7 @@
     "react-router-dom": "^4.3.1",
     "recharts": "^2.1.8",
     "systeminformation": "^4.0.0",
+    "util": "^0.12.5",
     "vanta": "^0.5.21"
   }
 }
