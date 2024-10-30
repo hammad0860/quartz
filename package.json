@@ -2,7 +2,7 @@
   "name": "quartz",
   "version": "1.0.0",
   "description": "Myriade desktop client",
-  "main": "./src/renderer/App.js",
+  "main": "src/main/main.ts",
   "scripts": {
     "dev": "webpack serve --config ./config/webpack.config.base.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
