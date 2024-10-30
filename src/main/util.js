@@ -20,7 +20,7 @@ module.exports = { resolveHtmlPath };
 
 
 
-
+/*
 
 const { app, BrowserWindow, ipcMain, shell } = require("electron");
 const log = require("electron-log");
@@ -370,3 +370,4 @@ ipcMain.on('change-config', (event, data) => {
     }
   });
 });
+*/

@@ -22,7 +22,7 @@
     createWindow();
   });
   
-
+/*
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import { lazy, Suspense, useEffect } from "react";
 import AuthLayer, { AuthConsumer, ProtectedRoute } from "./layers/AuthLayer";
