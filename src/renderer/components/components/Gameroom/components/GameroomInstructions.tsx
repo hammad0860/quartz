@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import { GAME_INSTRUCTIONS_DATA } from "const";
+import { GAME_INSTRUCTIONS_DATA } from "../../../../../const";
 import { Instructions } from "renderer/components/molecules/StartMining-I/Instructions";
 type Props = {};
 console.log("GAME_INSTRUCTIONS_DATA", GAME_INSTRUCTIONS_DATA);

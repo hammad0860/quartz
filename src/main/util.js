@@ -12,7 +12,7 @@ if (process.env.NODE_ENV === "development") {
   };
 } else {
   resolveHtmlPath = (htmlFileName) => {
-    return `file://${path.resolve(__dirname, "../renderer/", htmlFileName)}`;
+    return `file://${path.resolve(__dirname, "../../dist", htmlFileName)}`;
   };
 }
 

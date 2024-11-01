@@ -1,5 +1,5 @@
 import { Box, Stack } from "@mui/material";
-import { MINING_ALLOCATION_WIDGET_BOX_MC, MINING_ALLOCATION_WIDGET_BOX_XMR } from "const";
+import { MINING_ALLOCATION_WIDGET_BOX_MC, MINING_ALLOCATION_WIDGET_BOX_XMR } from "../../../../../const";
 import { FunctionComponent, ReactElement, useEffect, useState } from "react";
 import Typography from "renderer/components/atoms/TextStyles";
 import { MiningAllocationWidgetBox } from "renderer/components/molecules/StartMining-I/MiningAllocationWidgets";
