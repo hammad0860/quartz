@@ -312,7 +312,7 @@ WithdrawMoneroBoxProps) => {
                   }}
                 >
                   <img
-                    src="/assets/Illustrations/Withdraw-Illustration.webp"
+                    src="./assets/Illustrations/Withdraw-Illustration.webp"
                     alt="Description"
                     style={{
                       maxWidth: "325px",

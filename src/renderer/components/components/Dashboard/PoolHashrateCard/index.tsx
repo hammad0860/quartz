@@ -8,7 +8,7 @@ export const PoolHashrateCard = (props: Props) => {
     <DashboardCard
       cardTitle="Pool Hashrate"
       cardInfo=""
-      cardImgSrc="/assets/Illustrations/DM2.webp"
+      cardImgSrc="./assets/Illustrations/DM2.webp"
       LinkHoverTitle="Pool Stats"
       LinkIcon={StatsIcon}
       LinkPath=""

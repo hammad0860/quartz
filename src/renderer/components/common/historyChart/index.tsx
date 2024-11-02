@@ -72,7 +72,7 @@ export const HistoryChart = ({ isAnalytics, padding, text }: ChartProps) => {
           }}
         >
           <img
-            src="/assets/Illustrations/Historical-Metrics-3-Month-Card.webp"
+            src="./assets/Illustrations/Historical-Metrics-3-Month-Card.webp"
             alt="Your Image Alt Text"
             style={{
               maxWidth: "-webkit-fill-available",

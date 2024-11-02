@@ -9,6 +9,7 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'), 
+    publicPath: './',
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -18,7 +19,6 @@ module.exports = {
         patterns: [
           { from: 'src/services', to: 'services' }, 
           { from: 'public/assets', to: 'assets' },
-          { from: 'public/assets', to: 'assets/images' }, 
 
 
         ],
@@ -56,7 +56,7 @@ module.exports = {
         test: /\.(png|jpe?g|gif|svg|webp)$/, 
         type: 'asset/resource',              
         generator: {
-          filename: 'assets/[name][ext]',    
+          filename: 'assets/images/[name][ext]',    
         },
       }
     ],

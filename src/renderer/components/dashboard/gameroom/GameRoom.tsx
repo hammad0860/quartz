@@ -166,7 +166,7 @@ export const GameRoom = () => {
                   >
                     <GameRoomGiveAwayCard
                       giveAwayTitle="Monero Giveaways"
-                      imgSrc={"/assets/svg/MoneroBalanceIcon.svg"}
+                      imgSrc={"./assets/svg/MoneroBalanceIcon.svg"}
                       width="68px"
                       height="68px"
                       isGiveAwayCardClicked={isGiveAwayClicked.isMoneroClicked}
@@ -182,7 +182,7 @@ export const GameRoom = () => {
                   >
                     <GameRoomGiveAwayCard
                       giveAwayTitle="Gift Card Giveaways"
-                      imgSrc={"/assets/svg/GC.svg"}
+                      imgSrc={"./assets/svg/GC.svg"}
                       width="102px"
                       height="68px"
                       isGiveAwayCardClicked={
