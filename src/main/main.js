@@ -20,6 +20,10 @@ class AppUpdater {
 
 let mainWindow = null;
 
+if (require('electron-squirrel-startup')) app.quit();
+//Maybe try removing the above if it causes issues later
+
+
 if (process.env.NODE_ENV === "production") {
   const sourceMapSupport = require("source-map-support");
   sourceMapSupport.install();
@@ -181,6 +185,8 @@ const createWindow = async () => {
       preload: path.join(__dirname, 'preload.js'),
       nodeIntegration: true,
       contextIsolation: true,
+
+      webSecurity: false,
     },
   });
 

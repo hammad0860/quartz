@@ -161,6 +161,7 @@ const createWindow = async () => {
   if (isDevelopment) {
     await installExtensions();
   }
+
   app.commandLine.appendSwitch("enable-features=OverlayScrollbar");
 
   function getPlatformIcon() {
@@ -188,6 +189,10 @@ const createWindow = async () => {
       preload: path.join(__dirname, 'preload.js'),
       nodeIntegration: true,
       contextIsolation: true,
+
+      webSecurity: false, 
+      sandbox: false,
+
     },
   });
 
