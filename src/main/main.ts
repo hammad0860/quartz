@@ -196,7 +196,12 @@ const createWindow = async () => {
     },
   });
 
+
+
   mainWindow.loadURL(resolveHtmlPath("index.html"));
+
+  app.commandLine.appendSwitch('disable-gpu');
+
   app.on("ready", () => {
     if (!mainWindow) {
       throw new Error('"mainWindow" is not defined');

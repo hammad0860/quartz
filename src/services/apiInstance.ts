@@ -1,8 +1,10 @@
 import axios from "axios";
-import config from "../renderer/utils/config";
+
 const coreApi = axios.create({
-  baseURL: config.BASE_URL,
+ // baseURL: process.env.NODE_ENV === "production" ? "https://api.example.com" : "/", 
+  baseURL: "/",
 });
+
 coreApi.interceptors.request.use(
   (config) => {
     const authToken = `Bearer ${localStorage.getItem("access_token")}`;

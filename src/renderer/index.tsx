@@ -47,6 +47,6 @@ window.addEventListener('DOMContentLoaded', () => {
       (w[c].q = w[c].q || []).push(arguments);
     };
   s.async = true;
-  s.src = "https://call.chatra.io/chatra.js";
+ // s.src = "https://call.chatra.io/chatra.js";
   if (d.head) d.head.appendChild(s);
 })(document, window, "Chatra");

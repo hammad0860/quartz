@@ -190,6 +190,10 @@ const createWindow = async () => {
     },
   });
 
+
+  app.commandLine.appendSwitch('disable-gpu');
+
+
   mainWindow.loadURL(resolveHtmlPath("index.html"));
   app.on("ready", () => {
     if (!mainWindow) {
