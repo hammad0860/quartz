@@ -186,12 +186,11 @@ const createWindow = async () => {
       nodeIntegration: true,
       contextIsolation: true,
 
-      webSecurity: false,
+      webSecurity: true,
     },
   });
 
 
-  app.commandLine.appendSwitch('disable-gpu');
 
 
   mainWindow.loadURL(resolveHtmlPath("index.html"));

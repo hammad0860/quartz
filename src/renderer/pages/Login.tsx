@@ -15,11 +15,11 @@ interface LoginPageProps {
 interface LoginState {
   email: string;
   password: string;
-  showPassword: boolean; 
-  hover: boolean; 
+  showPassword: boolean;
+  hover: boolean;
   error: string | null;
   logging_in?: boolean;
-} 
+}
 
 const LoginPage: React.FC<LoginPageProps> = ({ authenticated, login }) => {
 
