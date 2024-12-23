@@ -10,6 +10,9 @@ const AdmZip = require('adm-zip');
 const fs = require('fs');
 const path = require('path');
 
+app.disableHardwareAcceleration();
+
+
 class AppUpdater {
   constructor() {
     log.transports.file.level = "info";
@@ -186,7 +189,6 @@ const createWindow = async () => {
       nodeIntegration: true,
       contextIsolation: true,
 
-      webSecurity: true,
     },
   });
 

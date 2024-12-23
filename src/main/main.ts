@@ -9,6 +9,9 @@ import axios from 'axios';
 import AdmZip from 'adm-zip';
 import fs from 'fs';
 import path from 'path';
+app.disableHardwareAcceleration();
+
+
 
 export default class AppUpdater {
   constructor() {
@@ -190,7 +193,6 @@ const createWindow = async () => {
       nodeIntegration: true,
       contextIsolation: true,
 
-      webSecurity: false, 
       sandbox: false,
 
     },
