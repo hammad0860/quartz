@@ -1,8 +1,8 @@
 import axios from "axios";
+import config from "../renderer/utils/config";
 
 const coreApi = axios.create({
- // baseURL: process.env.NODE_ENV === "production" ? "https://api.example.com" : "/", 
-  baseURL: "/",
+  baseURL: config.BASE_URL
 });
 
 coreApi.interceptors.request.use(

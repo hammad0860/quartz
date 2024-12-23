@@ -72,9 +72,7 @@ export const fetchHashrates = async (miner: Miner) => {
 };
 export const FetchCurrentMoneroUSDRate = async () => {
   try {
-    const response = await axios.get(
-      "https://min-api.cryptocompare.com/data/price?fsym=XMR&tsyms=USD"
-    );
+    const response = await axios.get("/cryptocompare/data/price?fsym=XMR&tsyms=USD");
     const data = response.data;
     return data;
   } catch (error) {
