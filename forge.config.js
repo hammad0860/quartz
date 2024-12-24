@@ -24,13 +24,37 @@ module.exports = {
       name: '@electron-forge/maker-zip',  
       platforms: ['darwin'],
     },
+
+    {
+      name: '@electron-forge/maker-dmg', 
+      config: {
+        icon: 'src/main/icons/icon.icns', 
+        format: 'ULFO', 
+        productName: 'Myriade',
+      },
+    },
+
     {
       name: '@electron-forge/maker-deb',
-      config: {},
+      config: {
+        options: {
+          maintainer: 'Myriade Team', 
+          homepage: 'https://myriade.app', 
+          icon: 'src/main/icons/icon-512x512.png', 
+          categories: ['Utility'], 
+        },
+      },
     },
     {
       name: '@electron-forge/maker-rpm',
-      config: {},
+      config: {
+        options: {
+          maintainer: 'Myriade Team', 
+          homepage: 'https://myriade.app', 
+          icon: 'src/main/icons/icon-512x512.png', 
+          categories: ['Utility'], 
+        },
+      },
     },
   ],
   plugins: [
@@ -38,8 +62,7 @@ module.exports = {
       name: '@electron-forge/plugin-auto-unpack-natives',
       config: {},
     },
-    // Fuses are used to enable/disable various Electron functionality
-    // at package time, before code signing the application
+
     new FusesPlugin({
       version: FuseVersion.V1,
       [FuseV1Options.RunAsNode]: false,
