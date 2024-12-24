@@ -201,7 +201,7 @@ export function IconLabelMenu() {
                     },
                   }}
                 >
-                  Logo ut
+                  Logout
                 </ListItemText>
               </MenuItem>
             </MenuList>

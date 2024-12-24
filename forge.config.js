@@ -4,6 +4,9 @@ const { FuseV1Options, FuseVersion } = require('@electron/fuses');
 module.exports = {
   packagerConfig: {
     asar: true,
+    icon:  'src/main/icons/icon', 
+    name: 'Myriade',
+
   },
   rebuildConfig: {},
   makers: [
@@ -11,6 +14,11 @@ module.exports = {
       name: '@electron-forge/maker-squirrel',
       config: {authors: 'Myriade',
         description: 'Mine Some Crypto!'},
+        setupIcon: 'src/main/icons/icon.ico', 
+        iconUrl: 'src/main/icons/icon.ico', 
+        shortcutName: 'Quartz',
+        productName: 'Myriade'
+
     },
     {
       name: '@electron-forge/maker-zip',  

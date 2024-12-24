@@ -22,7 +22,27 @@ module.exports = function(app) {
     })
   );
 
+  
+    app.use(
+    '/chatra-script',
+    createProxyMiddleware({
+      target: 'https://call.chatra.io',
+      changeOrigin: true,
+      pathRewrite: { '^/chatra-script': '' },
+    })
+  );
+  
+
+  app.use(
+    '/chatra-io',
+    createProxyMiddleware({
+      target: 'https://chat.chatra.io',
+      changeOrigin: true,
+      pathRewrite: { '^/chatra-io': '' },
+    })
+  );
 
   
-  
 };
+
+
