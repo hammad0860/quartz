@@ -3,8 +3,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin'); 
 
 
+const isDevelopment = process.env.NODE_ENV === 'development'; 
+
+
 module.exports = {
-    mode: 'development',
+  mode: 'development',
   entry: './src/renderer/index.tsx', 
   output: {
     filename: 'bundle.js',
@@ -62,3 +65,23 @@ module.exports = {
     ],
   },
 };
+
+
+
+if (isDevelopment) {
+  config.devServer = {
+    static: {
+      directory: path.resolve(__dirname, 'dist'), 
+    },
+    compress: true, 
+    port: 3000, 
+    hot: true, 
+    proxy: {
+      '/api': {
+        target: 'http://localhost:5000', 
+        changeOrigin: true,
+        pathRewrite: { '^/api': '' }, 
+      },
+    },
+  };
+}
