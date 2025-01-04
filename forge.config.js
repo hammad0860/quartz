@@ -12,7 +12,7 @@ module.exports = {
   makers: [
     {
       name: '@electron-forge/maker-squirrel',
-      config: {authors: 'Myriade',
+      config: {authors: 'Myriade Inc.',
         description: 'Mine Some Crypto!'},
         setupIcon: 'src/main/icons/icon.ico', 
         iconUrl: 'src/main/icons/icon.ico', 

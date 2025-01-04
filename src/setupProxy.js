@@ -23,7 +23,7 @@ module.exports = function(app) {
   );
 
   
-    app.use(
+  app.use(
     '/chatra-script',
     createProxyMiddleware({
       target: 'https://call.chatra.io',
