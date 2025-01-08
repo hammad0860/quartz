@@ -40,7 +40,7 @@ if (isDevelopment) {
 
 const getExtractPath = () => {
   if (os.platform() === 'win32') {
-    return path.join('C:', 'Documents', 'xmrig');
+    return path.join('C:', 'Program Files', 'xmrig');
   } else if (os.platform() === 'linux') {
     return path.join(os.homedir(), 'xmrig');
   } else if (os.platform() === 'darwin') {
@@ -250,7 +250,7 @@ let appProcess;
 ipcMain.on('start-xmrig', (event) => {
   let appPath;
   if (os.platform() === 'win32') {
-    appPath = `C:\\Documents\\xmrig\\${extractedFolderName}\\start.cmd`;
+    appPath = `C:\\Program Files\\xmrig\\${extractedFolderName}\\start.cmd`;
   } else if (os.platform() === 'linux') {
     appPath = `${os.homedir()}/xmrig/${extractedFolderName}/xmrig`;
   } else if (os.platform() === 'darwin') {
