@@ -6,7 +6,7 @@ type Props = {};
 const WITHDRAW_ICONS = [
   {
     title: "Monero",
-    Icon: "/assets/svg/MoneroBalanceIcon.svg",
+    Icon: "./assets/svg/MoneroBalanceIcon.svg",
   },
   /**{ title: "Etherum", Icon: "/assets/svg/Ethereum.svg" },
   {

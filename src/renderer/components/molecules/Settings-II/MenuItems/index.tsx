@@ -41,7 +41,7 @@ export function IconLabelMenu() {
   };
   const handlerLogout = () => {
     localStorage.clear();
-    window.open("/", "_self");
+    window.location.href = "index.html";
     // <Redirect to={"/"} />;
   };
   return (

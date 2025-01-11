@@ -209,7 +209,7 @@ export const SteamAmazonTabs = () => {
                                   }}
                                 >
                                   <img
-                                    src="/assets/svg/MoneroBalanceIcon.svg"
+                                    src="./assets/svg/MoneroBalanceIcon.svg"
                                     style={{ width: "16px", height: "16px" }}
                                   />
                                   <Typography

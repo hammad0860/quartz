@@ -64,7 +64,7 @@ const CURRENT__DRAWING = [
   },
 ];
 
-const commonImagePath = "/assets/Illustrations/img/Gameroom/"
+const commonImagePath = "./assets/Illustrations/img/Gameroom/"
 
 const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   '& .MuiDialogContent-root': {
@@ -485,7 +485,7 @@ export const CurrentDrawings = ({ raffles }: Props) => {
                                     }}
                                   >
                                     <img
-                                      src="/assets/svg/MoneroBalanceIcon.svg"
+                                      src="./assets/svg/MoneroBalanceIcon.svg"
                                       style={{ width: "16px", height: "16px" }}
                                     />
                                     <MuiTypoGraphy variant="bodySmall" fontFamily={"Poppins"} color="#EAEAEA">

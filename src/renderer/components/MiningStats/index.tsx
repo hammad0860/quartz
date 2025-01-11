@@ -1,6 +1,6 @@
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
-import { MINER_STATS_ARRAY } from "const";
+import { MINER_STATS_ARRAY } from "../../../const";
 import Typography from "../atoms/TextStyles";
 import { SecondaryButton } from "../atoms/Settings/Settings-II/SecondaryButton";
 

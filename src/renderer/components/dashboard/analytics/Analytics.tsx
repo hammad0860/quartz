@@ -116,7 +116,7 @@ export const Analytics = () => {
                       cardPointUnit="H/sec"
                       cardTitle="Average Hashrate(24h)"
                       cardPoints={miner.avgHashrate}
-                      imgSrc="/assets/Illustrations/DM.webp"
+                      imgSrc="./assets/Illustrations/DM.webp"
                       
                     />
                     
@@ -145,7 +145,7 @@ export const Analytics = () => {
                       cardTitle="Pool Hashrate"
                       cardPoints={"2039570"}
                       cardPointUnit="H/sec"
-                      imgSrc="/assets/Illustrations/DM2.webp"
+                      imgSrc="./assets/Illustrations/DM2.webp"
                     />
                   </Box>
                 </Grow>
@@ -174,7 +174,7 @@ export const Analytics = () => {
                       cardPointUnit=""
                       cardTitle="Total Mining Time"
                       cardPoints={"11:22:51:00"}
-                      imgSrc="/assets/Illustrations/DM3.webp"
+                      imgSrc="./assets/Illustrations/DM3.webp"
                     />
                   </Box>
                 </Grow>

@@ -1,0 +1,236 @@
+[33mcommit 30833c53742478d2a9cf052a7c04cea6da39d594[m[33m ([m[1;36mHEAD -> [m[1;32mmuhammadBranchAttempt3[m[33m, [m[1;31morigin/muhammadBranchAttempt3[m[33m)[m
+Author: hammad0860 <muhammad.h0860@gmail.com>
+Date:   Sat Oct 19 13:16:32 2024 -0400
+
+    changes prorgam file to ducment
+
+[33mcommit 9fd7efd51f0c7b7012d34444f9e60dac9b445e45[m
+Author: hammad0860 <muhammad.h0860@gmail.com>
+Date:   Mon Oct 7 19:09:45 2024 -0400
+
+    Update main.ts
+
+[33mcommit f180e21e5705a86168637121eb292432089b301e[m
+Author: hammad0860 <muhammad.h0860@gmail.com>
+Date:   Thu Oct 3 22:33:28 2024 -0400
+
+    Update SignUp.tsx
+
+[33mcommit 64c75d71ea26e72e8cf5abcfa293683edf2c2219[m
+Author: hammad0860 <muhammad.h0860@gmail.com>
+Date:   Thu Oct 3 22:32:45 2024 -0400
+
+    Update SignUp.tsx
+
+[33mcommit 4489b1858f8d1c8fc528c3f8e66a10a6cb4125a1[m
+Author: hammad0860 <muhammad.h0860@gmail.com>
+Date:   Thu Oct 3 22:30:40 2024 -0400
+
+    Chatra button resizing
+    
+    Fixed the chatra button window resizing so that it can open on different screen sizes relative to the sizes of the screen's height and prevents overflow
+
+[33mcommit b58211fa22586f921f6afcd403a3c0dcc6fc0c90[m
+Author: hammad0860 <muhammad.h0860@gmail.com>
+Date:   Thu Oct 3 00:37:26 2024 -0400
+
+    finalizing changes for ui resizing
+    
+    Almost all the changes are finalized and implemented properly, the only thing left is ensuring the chatra button works across the ui
+
+[33mcommit d43929a55c78b97e94021d1f327be4849f93fd98[m
+Author: hammad0860 <muhammad.h0860@gmail.com>
+Date:   Tue Oct 1 17:01:39 2024 -0400
+
+    Resizing the dashboard
+
+[33mcommit b26734d3a40f8a4f8cda033bfe6353ef94e73a18[m
+Author: hammad0860 <muhammad.h0860@gmail.com>
+Date:   Tue Oct 1 15:42:58 2024 -0400
+
+    trying to fix chatra button
+
+[33mcommit 50d4586b390c0e8cbcfc53fe03823f78b834e8a8[m
+Author: hammad0860 <muhammad.h0860@gmail.com>
+Date:   Mon Sep 30 15:38:14 2024 -0400
+
+    Adjusted the login adn signup pages to be resized for different sized screens
+
+[33mcommit d3d7c8026ed8d233e22f77e426f95022897a624e[m
+Author: hammad0860 <muhammad.h0860@gmail.com>
+Date:   Sun Sep 29 23:55:21 2024 -0400
+
+    Login and signup page changes
+    
+    Adjusted the login and signup pages to fit smaller screens, additionally changed a line in main.ts so that I can bypass the administrator privileges issue. It is important that this line be changed back when the final version of this branch is being merged.
+
+[33mcommit 989db6c745b1d77d6cf5471d5998a570fc58e6f1[m[33m ([m[1;31mupstream/master[m[33m, [m[1;31mupstream/HEAD[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Merge: 6296b6d 5045d93
+Author: Paul Beltekas <beltekasp@gmail.com>
+Date:   Thu Sep 5 09:10:37 2024 -0400
+
+    Merge pull request #4 from myriadeinc/aloha-mining
+    
+    aloha-mining => master [Implented Stop xmRig feature when clicked on stop mining]
+
+[33mcommit 5045d937c9649c3e6296056181ec85dd60b1177a[m[33m ([m[1;31mupstream/aloha-mining[m[33m, [m[1;31morigin/aloha-mining[m[33m)[m
+Author: Pradip Survashi <42201647+pradips07@users.noreply.github.com>
+Date:   Thu Sep 5 15:29:00 2024 +0530
+
+    Removed unused code
+
+[33mcommit f7a555b2c667ad2f05d63e2e3cb3ebdab5699940[m
+Author: Pradip Survashi <42201647+pradips07@users.noreply.github.com>
+Date:   Thu Sep 5 15:25:06 2024 +0530
+
+    Implented Stop xmRig feature when clicked on stop mining
+
+[33mcommit 6296b6d326de94f7bc77570827c8c0591808ceb7[m
+Merge: 192f5b4 ce9dc9d
+Author: Paul Beltekas <beltekasp@gmail.com>
+Date:   Fri Aug 30 18:22:45 2024 -0400
+
+    Merge pull request #3 from myriadeinc/aloha-mining
+    
+    aloha-mining => master [Mining integration, system information and game room]
+
+[33mcommit ce9dc9d1ec3c83a0651c8b67a42482a91f9182e0[m
+Author: Pradip Survashi <42201647+pradips07@users.noreply.github.com>
+Date:   Fri Aug 30 15:03:55 2024 +0530
+
+    Added auto download xmRig and config.json feature
+
+[33mcommit 024168070ffb4357996908ec6993138ebc1edf53[m
+Author: Pradip Survashi <42201647+pradips07@users.noreply.github.com>
+Date:   Tue Aug 27 15:50:37 2024 +0530
+
+    Added downloaded and extraction of zip file.
+
+[33mcommit 9d45d14873f50b97b3540cb7516e7abe4de8a848[m
+Author: Pradip Survashi <42201647+pradips07@users.noreply.github.com>
+Date:   Tue Aug 20 17:32:36 2024 +0530
+
+    Mining integration, system informantion and game room
+
+[33mcommit 192f5b44ad7b76508432e9d9d8f843087d081d85[m
+Author: sqphoenix <paul.beltekas@gmail.com>
+Date:   Sun Jun 9 14:16:23 2024 -0400
+
+    remove frontend elements not inteded for first release
+
+[33mcommit 8fa5f4123472f3ad3e2b0f8ada2917f8f17931f8[m
+Merge: 0e02f54 d09a510
+Author: Paul Beltekas <paul.beltekas@gmail.com>
+Date:   Thu May 30 19:41:19 2024 -0400
+
+    Merge pull request #2 from softwaredevzestgeek/master
+    
+    feat: UI fixes and performance
+
+[33mcommit d09a5106034fc29c201aa627698fb2874d96b42e[m
+Author: Rohit <rohit.zestgeek@gmail.com>
+Date:   Fri May 3 16:52:13 2024 +0530
+
+    fix:USD monero conversion,withdraw page validation.
+
+[33mcommit d7c78cedb14e61df2b70838b96627a87b305f5d0[m
+Author: Rohit <rohit.zestgeek@gmail.com>
+Date:   Thu May 2 16:19:16 2024 -0500
+
+    fix:unused code.
+
+[33mcommit 72c6c3e24ac9e5936043ab992142d96c6ef6d400[m
+Author: Rohit <rohit.zestgeek@gmail.com>
+Date:   Thu May 2 05:45:42 2024 -0500
+
+    feat:added logout functionality and menu items
+
+[33mcommit d1ff93aa2168fdc129e26e5a400a1b98add1c0ee[m
+Author: Rohit <rohit.zestgeek@gmail.com>
+Date:   Tue Apr 30 12:12:28 2024 +0530
+
+    fix:ui issues for gameroom page,giftcards page.
+
+[33mcommit 7f6afb5ec23f30e751129b21033019536c723366[m
+Author: Rohit <rohit.zestgeek@gmail.com>
+Date:   Tue Apr 30 01:01:33 2024 +0530
+
+    fix:fixes ui issues.
+
+[33mcommit bba5d0bc5c1a970978cf61dbdd49b77161356146[m
+Author: Rohit <rohit.zestgeek@gmail.com>
+Date:   Thu Apr 25 23:15:25 2024 +0530
+
+    fix component error for menu icon.
+
+[33mcommit 33f2bc6a533ade6129c9c980989c57bfb5d2028b[m
+Author: Rohit <rohit.zestgeek@gmail.com>
+Date:   Thu Apr 25 15:10:48 2024 +0530
+
+    feat:created compoenents for friends page and workers page.
+
+[33mcommit 9414189ec401638fcadd4a4b3a67e5ac50a11ad1[m
+Author: Rohit <rohit.zestgeek@gmail.com>
+Date:   Thu Apr 25 09:57:38 2024 +0530
+
+    feat:created components for workers page,mining page.
+
+[33mcommit 5cdcecc35dbfb4b4bad943c8ea9f4c45e12e8cfc[m
+Author: Rohit <rohit.zestgeek@gmail.com>
+Date:   Wed Apr 24 10:20:51 2024 +0530
+
+    created components for settings page,dashboard
+
+[33mcommit c0e3e870bdf5cc805c3c1d3c43cccace13d52cfc[m
+Author: Rohit <rohit.zestgeek@gmail.com>
+Date:   Mon Apr 22 10:29:00 2024 +0530
+
+    feat:molecules created.
+
+[33mcommit bbbf801dce68d706df75eb2b7ca897e7cb1f97c6[m
+Author: Rohit <rohit.zestgeek@gmail.com>
+Date:   Fri Apr 19 10:02:34 2024 +0530
+
+    created atom and molecules folder structure components for login and settings.
+
+[33mcommit bde5f3803bdb0bb79b4cd011650a462dc4ab5369[m
+Author: Rohit <rohit.zestgeek@gmail.com>
+Date:   Wed Apr 17 19:26:50 2024 +0530
+
+    fix:create theme for dark and light theme.
+
+[33mcommit 6ea87d3e1fa2c86f1c64051173ca0d42a224ca55[m
+Author: Rohit <rohit.zestgeek@gmail.com>
+Date:   Tue Apr 16 19:15:41 2024 +0530
+
+    fix:responsiveness for mini screens.
+
+[33mcommit 9095086e56503256da99db96f6ca17ff809e0b3a[m
+Merge: 2edba3d 6543254
+Author: Rohit <rohit.zestgeek@gmail.com>
+Date:   Tue Apr 16 11:37:49 2024 +0530
+
+    Merge branch 'master' of github.com-electron:softwaredevzestgeek/quartz
+
+[33mcommit 2edba3db1db783dbfc1a8754c536c879b8943c41[m
+Author: Rohit <rohit.zestgeek@gmail.com>
+Date:   Tue Apr 16 11:36:28 2024 +0530
+
+    fix:sidebar margin issue.
+
+[33mcommit 65432545eb667343fe03767dd080e1d2f78605f9[m
+Author: softwaredevzestgeek <151010318+softwaredevzestgeek@users.noreply.github.com>
+Date:   Fri Apr 12 19:07:42 2024 +0530
+
+    Update main.ts
+    
+    update resizeable from false to true
+
+[33mcommit e1defc0e04bd6033de94fb909d0b8922bd38f704[m
+Author: Rohit <rohit.zestgeek@gmail.com>
+Date:   Thu Apr 11 16:24:41 2024 +0530
+
+    fix:image path for monero icon on withdraw page.
+
+[33mcommit 25e50ff27bf64f725033264321acc3467f36e49e[m
+Author: Rohit <rohi

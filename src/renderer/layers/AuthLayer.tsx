@@ -2,7 +2,7 @@ import React, { createContext, useState, useEffect, useCallback, ReactNode } fro
 import { Redirect, Route, RouteProps } from "react-router-dom";
 import decode from "jwt-decode";
 import * as ROUTES from "../utils/routes";
-import { userLogin } from "services/api.service";
+import { userLogin } from "../../services/api.service";
 
 const ACCESS_TOKEN = "access_token";
 const AuthContext = createContext<AuthLayerState | undefined>(undefined);
