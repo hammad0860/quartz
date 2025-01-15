@@ -10,7 +10,7 @@ const AdmZip = require('adm-zip');
 const fs = require('fs');
 const path = require('path');
 
-//app.disableHardwareAcceleration();
+app.disableHardwareAcceleration();
 
 
 class AppUpdater {
