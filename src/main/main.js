@@ -167,7 +167,7 @@ const createWindow = async () => {
   function getPlatformIcon() {
     if (process.platform === "win32") {
       return path.join(__dirname, "icons", "icon.ico");
-    } else if (process.platform() === "darwin") {
+    } else if (process.platform === "darwin") {
       return path.join(__dirname, "icons", "icon.icns");
     } else {
       return path.join(__dirname, "icons", "icon-512x512.png");
