@@ -5,8 +5,7 @@ module.exports = {
   packagerConfig: {
     asar: true,
     icon:  'src/main/icons/icon', 
-    name: 'Myriade',
-    outDir: "./installers"
+    name: 'Myriade'
 
   },
   rebuildConfig: {},
@@ -23,7 +22,6 @@ module.exports = {
     },
     {
       name: '@electron-forge/maker-zip',  
-      outputDirectory: './dist/installers/mac',
       platforms: ['darwin'],
     },
 
