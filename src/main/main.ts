@@ -9,7 +9,7 @@ import axios from 'axios';
 import AdmZip from 'adm-zip';
 import fs from 'fs';
 import path from 'path';
-app.disableHardwareAcceleration();
+//app.disableHardwareAcceleration();
 
 
 
