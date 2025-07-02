@@ -5,7 +5,8 @@ module.exports = {
   packagerConfig: {
     asar: true,
     icon:  'src/main/icons/icon', 
-    name: 'Myriade'
+    name: 'Myriade',
+    executableName: 'Myriade',
 
   },
   rebuildConfig: {},
@@ -41,9 +42,7 @@ module.exports = {
           maintainer: 'Myriade Team', 
           homepage: 'https://myriade.app', 
           icon: 'src/main/icons/icon-512x512.png', 
-          categories: ['Utility'], 
-          executableName: "Myriade",
-
+          categories: ['Utility'],
         },
       },
     },
@@ -55,8 +54,6 @@ module.exports = {
           homepage: 'https://myriade.app', 
           icon: 'src/main/icons/icon-512x512.png', 
           categories: ['Utility'], 
-          executableName: "Myriade",
-
         },
       },
     },
