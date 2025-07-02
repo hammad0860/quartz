@@ -42,6 +42,8 @@ module.exports = {
           homepage: 'https://myriade.app', 
           icon: 'src/main/icons/icon-512x512.png', 
           categories: ['Utility'], 
+          executableName: "Myriade",
+
         },
       },
     },
@@ -53,6 +55,8 @@ module.exports = {
           homepage: 'https://myriade.app', 
           icon: 'src/main/icons/icon-512x512.png', 
           categories: ['Utility'], 
+          executableName: "Myriade",
+
         },
       },
     },
