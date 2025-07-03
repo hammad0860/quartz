@@ -6,6 +6,7 @@ module.exports = {
     asar: true,
     icon:  'src/main/icons/icon', 
     name: 'Myriade',
+    executableName: 'Myriade',
   },
   rebuildConfig: {},
   makers: [
